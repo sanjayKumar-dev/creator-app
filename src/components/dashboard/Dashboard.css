@@ -1,0 +1,32 @@
+.dasboard {
+    background: #FFF;
+}
+.main-content {
+    background: #e3e3e5;
+}
+aside {
+    padding-left: 20px;
+
+    .dashboard-fonts {
+        color: var(--Text, #030229);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        opacity: 0.5;
+    }
+
+}
+
+.logo {
+    margin-left: 20px;
+
+    span {
+        margin-left: 15px;
+    }
+}
+
+.slected {
+    border-radius: 0px 5px 5px 0px;
+    background: linear-gradient(90deg, #ACA9FF 0%, rgba(172, 169, 255, 0.00) 91.25%);
+}
