@@ -105,7 +105,7 @@ const Dashboard = ({ children }) => {
                 <div className="text-gray-800 p-4">
                     <Header />
                 </div>
-                <div className='flex justify-center items-center h-[80vh]'>
+                <div className='flex justify-center items-center h-screen'>
                     <UploadExcel />
                 </div>
             </div>
