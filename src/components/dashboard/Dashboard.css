@@ -2,7 +2,7 @@
     background: #FFF;
 }
 .main-content {
-    background: #e3e3e5;
+    background: #FAFAFB;;
 }
 aside {
     padding-left: 20px;
@@ -15,7 +15,6 @@ aside {
         line-height: normal;
         opacity: 0.5;
     }
-
 }
 
 .logo {
