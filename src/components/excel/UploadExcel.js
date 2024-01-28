@@ -60,7 +60,7 @@ export class UploadExcel extends Component {
             <>
                 <div className='flex flex-col justify-center items-center upload-container'>
                     <div className='center'>
-                        <div className='box flex justify-center items-center h-screen'
+                        <div className='box flex justify-center items-center'
                             onDrop={this.handleDrop}
                             onDragOver={this.handleDragOver}>
                             <div className="flex flex-col items-center">
