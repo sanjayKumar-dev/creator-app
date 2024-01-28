@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
+import './UploadedTable.css'
 
 function UploadedTable({ initialData }) {
     const [tableData] = useState(initialData ? initialData.slice(1) : [])
     const [selectedTags, setSelectedTags] = useState([])
 
     const handleSelectTag = (tag, rowIndex) => {
-
         const updatedRowSelectedTags = [...selectedTags];
         if (!updatedRowSelectedTags[rowIndex]) {
             updatedRowSelectedTags[rowIndex] = [];
@@ -18,9 +18,11 @@ function UploadedTable({ initialData }) {
 
     const renderSelectTagsDropdown = (tags, rowIndex) => {
         return (
-            <select onChange={(e) => handleSelectTag(e.target.value, rowIndex)}>
+            <select className='custom-select' onChange={(e) => handleSelectTag(e.target.value, rowIndex)}>
+                <option disabled selected>Select Tags</option>
+
                 {tags.map((tag, index) => (
-                    <option key={index} value={tag}>{tag}</option>
+                    <option className='custom-select-option' key={index} value={tag}>{tag}</option>
                 ))}
             </select>
         )
@@ -38,12 +40,12 @@ function UploadedTable({ initialData }) {
     }
 
     return (
-        <div className=''>
-            Uploads
-            <div>
-                <table>
+        <div className='table-container'>
+            <h2 className='text-2xl'>Uploads</h2>
+            <div className='table mt-6'>
+                <table >
                     <thead>
-                        <tr>
+                        <tr align="Left">
                             {initialData[0].map((header, index) => (
                                 <th style={{ textTransform: 'capitalize' }} key={index}>{header}</th>
                             ))}
