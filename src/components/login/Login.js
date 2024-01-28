@@ -46,7 +46,7 @@ function SignInPage() {
                         <div>
                             <div className='flex flex-col justify-start signin-heading'>
                                 <p>Sign In</p>
-                                <span>Sign in to your account</span>
+                                <span className='mt-2'>Sign in to your account</span>
                             </div>
                             <div className='w-full'>
                                 <button className='py-2 px-4 rounded inline-flex items-center justify-center mt-3 signin-btn'>
@@ -99,14 +99,11 @@ function SignInPage() {
                                     <button className='text-white py-2 px-4 rounded inline-flex items-center justify-center mt-3 w-full'>Sign In</button>
                                 </div>
                             </div>
-                            <div className='last-info'>
+                            <div className='last-info mt-4'>
                                 <p>Don’t have an account? <span>Register here</span></p>
                             </div>
                         </div>
                     </div>
-
-
-
                 </div>
             </div>
         </div>
