@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import excelLogo from '../../assets/image/excel-logo.png'
 import './UploadExcel.css'
 import * as XLSX from 'xlsx'
-import UploadedTable from '../table/UploadedTable.tsx'
+import UploadedTable from '../table/UploadedTable'
 
 export class UploadExcel extends Component {
     state = {
@@ -93,7 +93,7 @@ export class UploadExcel extends Component {
                 </div>
                </div>
                 
-                <UploadedTable />
+               {excelData ? <UploadedTable initialData={excelData} /> : ''}
                 {/* {error && <p style={{ color: 'red' }}>{error}</p>}
                 {excelData && (
                     <div>
