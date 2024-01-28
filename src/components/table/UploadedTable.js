@@ -28,6 +28,12 @@ function UploadedTable({ initialData }) {
         )
     }
 
+    const handleRemoveTag = (tagIndex, rowIndex) => {
+        const updatedRowSelectedTags = [...selectedTags];
+        updatedRowSelectedTags[rowIndex].splice(tagIndex, 1);
+        setSelectedTags(updatedRowSelectedTags);
+    }
+
     const renderTableRows = () => {
         return tableData.map((row, index) => (
             <tr key={index}>
@@ -38,7 +44,7 @@ function UploadedTable({ initialData }) {
 
                 <td>
                     {selectedTags[index] && selectedTags[index].map((tag, tagIndex) => (
-                        <span className='tags' key={tagIndex}>{tag} &nbsp; X</span>
+                        <span className='tags' key={tagIndex}>{tag} &nbsp;<button onClick={() => handleRemoveTag(tagIndex, index)}>X</button></span>
                     ))}
                 </td>
             </tr>
@@ -46,8 +52,8 @@ function UploadedTable({ initialData }) {
     }
 
     return (
-        <div className='table-container'>
-            <h2 className='text-2xl'>Uploads</h2>
+        <div className='table-container m-6'>
+            <h2 className='text-2xl mt-6 font-bold'>Uploads</h2>
             <div className='table mt-6'>
                 <table >
                     <thead>

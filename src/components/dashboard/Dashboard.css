@@ -2,7 +2,9 @@
     background: #FFF;
 }
 .main-content {
-    background: #FAFAFB;;
+    height: auto;
+    overflow: auto;
+    background: #FAFAFB;
 }
 aside {
     padding-left: 20px;
