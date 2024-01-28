@@ -1,8 +1,8 @@
 import React from 'react'
 import './Dashboard.css'
 import Header from '../header/Header.tsx'
-import UploadExcel from '../excel/UploadExcel.tsx'
-const Dashboard = ({ children }) => {
+import UploadExcel from '../excel/UploadExcel'
+const Dashboard = () => {
     return (
         <div className="flex h-screen">
             <div className="dasboard text-gray-800 w-64">
@@ -105,11 +105,10 @@ const Dashboard = ({ children }) => {
                 <div className="text-gray-800 p-4">
                     <Header />
                 </div>
-                <div className='flex justify-center items-center h-screen'>
+                <div>
                     <UploadExcel />
                 </div>
             </div>
-            
         </div>
     )
 }
