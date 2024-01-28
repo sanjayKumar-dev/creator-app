@@ -1,0 +1,121 @@
+#login {
+    background: #F8FAFF;
+}
+
+.left-screen {
+    background: linear-gradient(100deg, #605BFF 85.5%, #F8FAFF calc(85.5% + 1px));
+}
+
+.right-screen {
+    background: #F8FAFF;
+}
+
+#logo {
+    margin-left: 35px;
+    margin-top: 25px;
+}
+
+#title {
+    color: #FFF;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#footer {
+    width: 50%;
+    margin-left: 8rem;
+    margin-bottom: 2rem;
+}
+
+.signin-btn {
+    width: 48.5%;
+    background-color: #FFFFFF;
+    margin-right: 5px;
+    color: var(--Secondary-Text, #858585);
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 10px;
+
+    svg {
+        margin-right: 10px;
+    }
+}
+
+.form {
+    border-radius: 20px;
+    background: #FFF;
+    width: 422.635px;
+    /* height: 347.988px; */
+    flex-shrink: 0;
+
+    label {
+        color: #000;
+        /* font-family: Lato; */
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    input {
+        border-radius: 10px;
+        background: var(--Background, #F5F5F5);
+        margin-bottom: 10px;
+    }
+
+    p {
+        color: var(--Link, #346BD4);
+        /* font-family: Lato; */
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    button {
+        border-radius: 10px;
+        background: #605BFF;
+    }
+}
+
+.signin-heading {
+    color: #000;
+    font-style: normal;
+    line-height: normal;
+    margin-bottom: 10px;
+
+    p {
+        /* font-family: Montserrat; */
+        font-size: 36px;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    span {
+        /* font-family: Lato; */
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+
+.last-info {
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    /* font-family: Lato; */
+
+    p {
+        color: var(--Secondary-Text, #858585);
+        text-align: center;
+    }
+
+    span {
+        color: var(--Link, #346BD4);
+    }
+}
