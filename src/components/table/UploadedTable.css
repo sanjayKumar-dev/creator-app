@@ -34,6 +34,7 @@
         td:first-child {
             border-radius: 8px 0 0 8px;
         }
+
         td:last-child {
             border-radius: 0 8px 8px 0;
         }
@@ -64,7 +65,32 @@
             box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.40), 0px 8px 24px -6px rgba(0, 0, 0, 0.16);
         }
     }
+}
 
+.tags {
+    padding: 6px;
+    align-items: center;
+    gap: 4px;
+    border-radius: 4px;
+    background: #605BFF;
+    color: var(--Light-Gohan, #FFF);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-right: 5px;
+}
 
-
+.link {
+    color: #5B93FF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    text-decoration-line: underline;
 }
