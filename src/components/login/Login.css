@@ -30,6 +30,7 @@
 }
 
 .signin-btn {
+    width: 48.5%;
     background-color: #FFFFFF;
     margin-right: 5px;
     color: var(--Secondary-Text, #858585);
@@ -38,6 +39,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin-bottom: 10px;
 
     svg {
         margin-right: 10px;
@@ -48,6 +50,72 @@
     border-radius: 20px;
     background: #FFF;
     width: 422.635px;
-    height: 347.988px;
+    /* height: 347.988px; */
     flex-shrink: 0;
+
+    label {
+        color: #000;
+        /* font-family: Lato; */
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    input {
+        border-radius: 10px;
+        background: var(--Background, #F5F5F5);
+        margin-bottom: 10px;
+    }
+
+    p {
+        color: var(--Link, #346BD4);
+        /* font-family: Lato; */
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    button {
+        border-radius: 10px;
+        background: #605BFF;
+    }
+}
+
+.signin-heading {
+    color: #000;
+    font-style: normal;
+    line-height: normal;
+    margin-bottom: 10px;
+
+    p {
+        /* font-family: Montserrat; */
+        font-size: 36px;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    span {
+        /* font-family: Lato; */
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+
+.last-info {
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    /* font-family: Lato; */
+
+    p {
+        color: var(--Secondary-Text, #858585);
+        text-align: center;
+    }
+
+    span {
+        color: var(--Link, #346BD4);
+    }
 }
