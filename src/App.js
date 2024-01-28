@@ -1,9 +1,11 @@
 import Dashboard from "./components/dashboard/Dashboard.tsx"
+import Login from "./components/login/Login.js"
 
 function App() {
   return (
     <div>
-      <Dashboard />
+      <Login />
+      {/* <Dashboard /> */}
     </div>
   )
 }

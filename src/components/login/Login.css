@@ -1,0 +1,53 @@
+#login {
+    background: #F8FAFF;
+}
+
+.left-screen {
+    background: linear-gradient(100deg, #605BFF 85.5%, #F8FAFF calc(85.5% + 1px));
+}
+
+.right-screen {
+    background: #F8FAFF;
+}
+
+#logo {
+    margin-left: 35px;
+    margin-top: 25px;
+}
+
+#title {
+    color: #FFF;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#footer {
+    width: 50%;
+    margin-left: 8rem;
+    margin-bottom: 2rem;
+}
+
+.signin-btn {
+    background-color: #FFFFFF;
+    margin-right: 5px;
+    color: var(--Secondary-Text, #858585);
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    svg {
+        margin-right: 10px;
+    }
+}
+
+.form {
+    border-radius: 20px;
+    background: #FFF;
+    width: 422.635px;
+    height: 347.988px;
+    flex-shrink: 0;
+}
