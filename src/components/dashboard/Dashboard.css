@@ -20,6 +20,7 @@ aside {
 }
 
 .logo {
+    margin-top: 20px;
     margin-left: 20px;
 
     span {
@@ -30,4 +31,12 @@ aside {
 .slected {
     border-radius: 0px 5px 5px 0px;
     background: linear-gradient(90deg, #ACA9FF 0%, rgba(172, 169, 255, 0.00) 91.25%);
+}
+
+ul {
+    margin-top: 42px;
+    li {
+        margin-top: 15px !important;
+        margin-bottom: 15px !important;
+    }
 }
