@@ -4,7 +4,7 @@
 }
 
 .table {
-    
+
     background: var(--Light-Goku, #F5F5F5);
     border-radius: 8px;
 
@@ -44,9 +44,9 @@
         display: flex;
         width: 150px;
         height: 32px;
-        padding: 0 !important;
+        padding: 0 10px 2px 10px !important;
         line-height: 30px;
-        padding: 12px;
+        /* padding: 12px; */
         justify-content: center;
         align-items: center;
         gap: 8px;
@@ -63,6 +63,10 @@
             gap: 16px;
             border-radius: 12px;
             box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.40), 0px 8px 24px -6px rgba(0, 0, 0, 0.16);
+        }
+
+        option:hover {
+            background-color: yellow;
         }
     }
 }

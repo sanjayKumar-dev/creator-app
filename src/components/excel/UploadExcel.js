@@ -56,6 +56,10 @@ export class UploadExcel extends Component {
 
     render() {
         const { excelData, fileName, error } = this.state
+        let classForBtn = 'upload-btn text-white py-2 px-4 rounded inline-flex items-center justify-center mt-3'
+        if(excelData) {
+            classForBtn += ' disable-btn'
+        }
         return (
             <>
                 <div className='flex flex-col justify-center items-center upload-container'>
@@ -72,7 +76,7 @@ export class UploadExcel extends Component {
                                 </div>
                             </div>
                         </div>
-                        <label htmlFor="file-upload" className="upload-btn text-white py-2 px-4 rounded inline-flex items-center justify-center mt-3">
+                        <label htmlFor="file-upload" className={classForBtn}>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M19.125 14.1923V16.9327C19.125 18.1435 18.1435 19.125 16.9327 19.125H7.06731C5.85653 19.125 4.875 18.1435 4.875 16.9327V14.1923M12 15.8365V4.875M12 4.875L8.71154 8.16346M12 4.875L15.2885 8.16346" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
@@ -80,22 +84,17 @@ export class UploadExcel extends Component {
                         </label>
                         <input
                             id="file-upload"
+                            disabled={excelData ? true : false}
                             type="file"
                             onChange={this.handleFileUpload}
                             style={{ display: 'none' }}
                         />
-                        {/* <button type="button" className="upload-btn text-white py-2 px-4 rounded inline-flex items-center justify-center mt-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M19.125 14.1923V16.9327C19.125 18.1435 18.1435 19.125 16.9327 19.125H7.06731C5.85653 19.125 4.875 18.1435 4.875 16.9327V14.1923M12 15.8365V4.875M12 4.875L8.71154 8.16346M12 4.875L15.2885 8.16346" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                        Upload
-                    </button> */}
                     </div>
                 </div>
 
                 {excelData ? <UploadedTable initialData={excelData} /> : ''}
-                {/* {error && <p style={{ color: 'red' }}>{error}</p>}
-                {excelData && (
+                {error && <p style={{ color: 'red' }}>{error}</p>}
+                {/* {excelData && (
                     <div>
                         <h3>Uploaded Excel Data:</h3>
                         <pre>{JSON.stringify(excelData, null, 2)}</pre>

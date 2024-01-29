@@ -36,3 +36,7 @@
 .upload-container {
     margin-top: 8rem;
 }
+
+.disable-btn {
+    opacity: 0.4;
+}
