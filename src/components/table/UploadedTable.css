@@ -1,6 +1,6 @@
 .table-container {
-    margin-top: 8rem;
-    margin-left: 5rem;
+    margin-top: 8rem !important;
+    margin-left: 5rem !important;
 }
 
 .table {
