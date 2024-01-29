@@ -2,7 +2,12 @@ import React from 'react'
 import './Login.css'
 import logo from '../../assets/image/loginLogo.png'
 
-function SignInPage() {
+function SignInPage({ onLogin }) {
+    
+    const handleLoginClick = () => {
+        onLogin()
+    }
+
     return (
         <div >
             <div className="flex h-screen">
@@ -96,7 +101,7 @@ function SignInPage() {
                                         </div>
                                     </div>
                                     <p>Forgot password?</p>
-                                    <button className='text-white py-2 px-4 rounded inline-flex items-center justify-center mt-3 w-full'>Sign In</button>
+                                    <button onClick={handleLoginClick} className='text-white py-2 px-4 rounded inline-flex items-center justify-center mt-3 w-full'>Sign In</button>
                                 </div>
                             </div>
                             <div className='last-info mt-4'>
