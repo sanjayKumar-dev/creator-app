@@ -1,6 +1,6 @@
 import React from 'react'
 import './Dashboard.css'
-import Header from '../header/Header.tsx'
+import Header from '../header/Header'
 import UploadExcel from '../excel/UploadExcel'
 const Dashboard = () => {
     return (
