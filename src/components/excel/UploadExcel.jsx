@@ -34,7 +34,7 @@ export class UploadExcel extends Component {
             const sheet = workbook.Sheets[sheetName]
             const excelData = XLSX.utils.sheet_to_json(sheet, { header: 1 })
             this.setState({ excelData })
-            console.log('excelData', excelData)
+            // console.log('excelData', excelData)
         }
         reader.readAsArrayBuffer(file)
     }
@@ -57,7 +57,7 @@ export class UploadExcel extends Component {
     render() {
         const { excelData, fileName, error } = this.state
         let classForBtn = 'upload-btn text-white py-2 px-4 rounded inline-flex items-center justify-center mt-3'
-        if(excelData) {
+        if (excelData) {
             classForBtn += ' disable-btn'
         }
         return (

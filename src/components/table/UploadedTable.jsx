@@ -38,15 +38,18 @@ function UploadedTable({ initialData }) {
         return tableData.map((row, index) => (
             <tr key={index}>
                 {row.map((cell, cellIndex) => (
+                    <td key={cellIndex}>{cell}</td>
+                ))}
+                {/* {row.map((cell, cellIndex) => (
                     <td key={cellIndex}>{cellIndex === 1 ? <a className='link' href={`https://${cell}`} target="_blank">{cell}</a> :
                         cellIndex === 3 ? renderSelectTagsDropdown(cell.split(', '), index) : cell}</td>
-                ))}
+                ))} */}
 
-                <td>
+                {/* <td>
                     {selectedTags[index] && selectedTags[index].map((tag, tagIndex) => (
                         <span className='tags' key={tagIndex}>{tag} &nbsp;<button onClick={() => handleRemoveTag(tagIndex, index)}>X</button></span>
                     ))}
-                </td>
+                </td> */}
             </tr>
         ))
     }
